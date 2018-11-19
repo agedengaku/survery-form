@@ -5,6 +5,34 @@
 	<title>Survey Form</title>
 </head>
 <body>
-	
+	<header>
+		<h1 id="title">Survey Form Title</h1>	
+		<p id="description">Description here</p>
+	</header>
+	<form action="" id="survey-form">
+		<label for="name" id="name-label">Name</label>
+		<input type="text" placeholder="Name" id="name" name="name" required>
+		<label for="email" id="email-label">Email</label>
+		<input type="email" placeholder="Email" id="email" name="email" required>
+		<label for="number" id="number-label">Number</label>
+		<input type="number" placeholder="Number" id="number" name="number" min="1" max="10">
+		
+		<select name="temp" id="dropdown">
+			<option value="a">A</option>
+			<option value="b">B</option>
+		</select>
+		
+		<input type="radio" name="stuff" value="c" checked>
+		<label for="c">C</label>
+		<input type="radio" name="stuff" value="d" checked>
+		<label for="d">D</label>
+		
+		<input type="checkbox" value="e">
+		<input type="checkbox" value="f">
+
+		<textarea name="comments" id="comments" cols="30" rows="10" value>Comments</textarea>
+
+		<button type="submit" id="submit">Submit</button>
+	</form>
 </body>
 </html>
