@@ -18,8 +18,12 @@ body {
 	display: grid;
 	grid-template-columns: 20% 80%;
 }
-input[type=text] {
+input {
 	width: 250px;
+}
+
+select {
+	width: 50px;
 }
 textarea {
 	vertical-align: top;
