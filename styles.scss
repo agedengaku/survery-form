@@ -1,0 +1,26 @@
+body {
+	background-color: #1dcaff;
+	display: grid;
+	// grid-template-columns: 80%;
+	justify-items: center;
+}
+.form-group {	
+	background-color: #fff;
+	padding: 40px;
+	// .label {
+	// 	grid-template-columns: 
+	// }
+	width: 80vw;
+}
+.form-section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+input[type=text] {
+	width: 200px;
+}
+textarea {
+	vertical-align: top;
+}
