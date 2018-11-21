@@ -4,27 +4,41 @@ body {
 	// grid-template-columns: 80%;
 	justify-items: center;
 }
+
 .form-group {	
 	background-color: #fff;
 	padding: 40px;
-	// .label {
-	// 	grid-template-columns: 
-	// }
-	width: 80vw;
+	width: 60vw;
+	display: grid;
+	justify-items: center;
+	border-radius: 1%;
 }
+
+#survey-form {
+	width: 70%;
+}
+
 .form-section {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	display: grid;
 	grid-template-columns: 20% 80%;
 }
+
 input {
-	width: 250px;
+	// width: 80%;
 }
 
 select {
 	width: 50px;
 }
+
 textarea {
 	vertical-align: top;
 }
+
+#submit {
+	display: grid;
+	justify-items: center;
+	// grid-template-columns: 50px;
+} 
