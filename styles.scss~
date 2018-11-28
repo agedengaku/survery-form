@@ -168,7 +168,7 @@ textarea {
 	#description-wrapper {
 		width: 60%;	
 	}
-	#survey-form {
+	#surver-form {
 		width: 100%;	
 	}	
 }

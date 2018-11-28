@@ -2,7 +2,6 @@
   font-family: 'Star Jedi Hollow';
   src: url("https://jmotaylor.com/fonts/StarJediHollow.eot");
   src: url("https://jmotaylor.com/fonts/StarJediHollow.eot?#iefix") format("embedded-opentype"), url("https://jmotaylor.com/fonts/StarJediHollow.woff2") format("woff2"), url("https://jmotaylor.com/fonts/StarJediHollow.ttf") format("truetype"), url("https://jmotaylor.com/fonts/StarJediHollow.woff") format("woff"), url("https://jmotaylor.com/fonts/StarJediHollow.svg#StarJediHollow") format("svg"); }
-
 body {
   background: url("https://c1.staticflickr.com/5/4847/45944056202_473620cd1f_b.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -32,7 +31,12 @@ h1 {
   text-align: center;
   color: #d6c07c;
   animation: scrolltext 20s linear infinite;
-  font-size: 20px; }
+  /* Font styles from https://codepen.io/geoffgraham/pen/BpwqOE */
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: justify; }
 
 .form-group {
   background-color: rgba(255, 255, 255, 0.7);
@@ -40,7 +44,9 @@ h1 {
   width: 60vw;
   display: grid;
   justify-items: center;
-  border-radius: 1%; }
+  border-radius: 1%;
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 1px; }
 
 #survey-form {
   width: 80%; }
@@ -91,12 +97,43 @@ textarea {
     transform: translateY(130%); }
   100% {
     transform: translateY(-150%); } }
+@media (max-width: 912px) {
+  h1 {
+    font-size: 60px;
+    line-height: 95%;
+    margin-bottom: 20px; }
 
+  #description {
+    font-size: 16px; }
+
+  #description-wrapper {
+    width: 50%; } }
+@media (max-width: 700px) {
+  #description {
+    font-size: 14px; } }
 @media (max-width: 600px) {
   .form-section {
     grid-template-columns: 100%;
     grid-template-areas: "label" "input"; }
+
   input, .options, select, textarea {
     margin-left: 0; }
+
   label {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  #description-wrapper {
+    width: 60%; }
+
+  #survey-form {
+    width: 100%; } }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0; }
+
+  #description {
+    font-size: 12px;
+    letter-spacing: 1px; } }
+
+/*# sourceMappingURL=styles.css.map */

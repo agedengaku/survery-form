@@ -10,7 +10,7 @@
 	<header>
 		<h1 id="title">Star Wars Survey</h1>
     <div id="description-wrapper">
-		  <p id="description">We'd like to find out which STAR WARS film is the best one, so this survey is here to once and for all end the debate and declare the BEST STAR WARS FILM EVER. (Which of course will be Episode V, right? I mean, come on, the BATTLE OF HOTH was awesome!)</p>
+		  <p id="description">We'd like to find out which Star Wars film is the best one, so this survey is here to once and for all end the debate and declare the BEST STAR WARS FILM EVER. (Which of course will be Episode V, right? I mean, come on, the Battle of Hoth was awesome!)</p>
     </div>  
 	</header>
 	<div class="form-group">	
