@@ -82,12 +82,34 @@ label {
 	grid-area: label;
 }
 
+label[for=name], label[for=email], label[for=age] {
+	align-self: center;
+}
+
 input, .options, select, textarea {
 	margin-left: 20px;
 }
 
 input {
-	font-size: 20px;
+	padding: 3px;
+	font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight: 100;
+}
+::-moz-placeholder { /* Firefox 19+ */
+
+  font-weight: 100;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-weight: 100;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 100;
 }
 
 input[type=number] {
