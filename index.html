@@ -15,13 +15,13 @@
 	</header>
 	<div class="form-group">	
 		<form action="" id="survey-form">
-      <p>* Required fields</p>
+      <p><span class="ast">*</span> Required fields</p>
 			<div class="form-section">
-				<label for="name" id="name-label">Name*</label>
+				<label for="name" id="name-label">Name<span class="ast">*</span></label>
 				<input type="text" placeholder="Name" id="name" name="name" required>
 			</div>
 			<div class="form-section">
-				<label for="email" id="email-label">Email*</label>
+				<label for="email" id="email-label">Email<span class="ast">*</span></label>
 				<input type="email" placeholder="Email" id="email" name="email" required>
 			</div>
 	    	<div class="form-section">    
@@ -29,7 +29,7 @@
 			  <input type="number" placeholder="Age" id="age" name="age" min="1" max="130">
 			</div>
 	    	<div class="form-section">
-	      		<label for="seenall">Have you seen all the movies? (Episode 1 - 8)</label>
+	      		<label for="seenall">Have you seen all the movies? (Episode 1 - 8)<span class="ast">*</span></label>
 		  		<select name="seenall" id="dropdown">
 		  			<option value="1">Yes</option>
 		  			<option value="0">No</option>
@@ -37,7 +37,7 @@
 			</div>
 
 	    <div class="form-section">
-  		  <label for="movies">Which episode is the best Star Wars film?*</label>
+  		  <label for="movies">Which episode is the best Star Wars film?<span class="ast">*</span></label>
       	<div id="movies" class="options">
       	  <input type="radio" name="movie" value="4" required><span>Episode IV</span>
       	  <input type="radio" name="movie" value="5" checked="checked"><span>Episode V</span>
@@ -57,12 +57,12 @@
   			  <input type="checkbox" value="salacious"><span>Salacious B. Crumb</span>
           <input type="checkbox" value="bossnass"><span>Rugor Nass</span>
           <input type="checkbox" value="ewoks"><span>Ewoks (all of them)</span>
-  			  <input type="checkbox" value="ziro"><span>Hutt Ziro Desilijic Tiure</span>
+  			  <input type="checkbox" value="ziro"><span>Master Codebreaker</span>
         </div>
 	    </div>
 	    <div class="form-section">
 			  <label for="comments">Comments</label>
-	      <textarea name="comments" id="comments" cols="30" rows="10" value>If you'd like to explain any of your answers, you can do so here.</textarea>
+	      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="If you'd like to explain any of your answers, you can do so here."></textarea>
 	    </div>
 	    <div id="submit">
 			  <button type="submit" id="submit-btn">Submit</button>

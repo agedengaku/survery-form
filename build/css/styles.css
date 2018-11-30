@@ -39,6 +39,9 @@ h1 {
   letter-spacing: 3px;
   text-align: justify; }
 
+.ast {
+  color: red; }
+
 .form-group {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 40px;
@@ -70,11 +73,15 @@ input, .options, select, textarea {
   margin-left: 20px; }
 
 input {
+  letter-spacing: 0;
+  font-weight: 500;
+  line-height: 160%; }
+
+input, textarea {
   padding: 3px;
   font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 700;
-  line-height: 160%; }
+  border-radius: 5px;
+  border: 1px solid gray; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -102,19 +109,24 @@ input[type=number] {
 span {
   line-height: 1.5; }
 
-select {
-  height: 30px;
+#dropdown {
+  -webkit-appearance: menulist-button;
+  height: 36px;
   width: 60px;
-  font-size: 20px; }
+  font-size: 16px; }
 
 textarea {
   vertical-align: top;
   grid-area: input;
-  border: 1px solid green; }
+  resize: none; }
 
 #submit {
   display: grid;
   justify-items: center; }
+
+#submit-btn {
+  font-family: Star Jedi Hollow;
+  font-size: 50px; }
 
 @keyframes scrolltext {
   0% {
@@ -134,7 +146,9 @@ textarea {
 
 @media (max-width: 700px) {
   #description {
-    font-size: 14px; } }
+    font-size: 14px; }
+  label {
+    font-size: 18px; } }
 
 @media (max-width: 600px) {
   .form-section {
