@@ -78,7 +78,7 @@ input {
   line-height: 160%; }
 
 input, textarea {
-  padding: 3px;
+  padding: 3px 3px 3px 5px;
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid gray; }
@@ -125,8 +125,22 @@ textarea {
   justify-items: center; }
 
 #submit-btn {
-  font-family: Star Jedi Hollow;
-  font-size: 50px; }
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  background-color: #d6c07c;
+  border: 0;
+  box-shadow: 0 4px 2px;
+  outline: none; }
+
+#submit-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px; }
+
+#submit-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 2px; }
 
 @keyframes scrolltext {
   0% {
